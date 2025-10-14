@@ -12,3 +12,6 @@ module:
     - source: blox/helpers
       target: layouts/partials/blox/community/helpers/
       includeFiles: '**.html'
+    - source: blox
+      target: layouts/partials/blocks/
+      includeFiles: '**.html'
