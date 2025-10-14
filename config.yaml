@@ -6,3 +6,9 @@ module:
     - source: blox
       target: assets/dist/community/blox/
       includeFiles: '**.css'
+    - source: blox/header
+      target: layouts/partials/blox/community/header/
+      includeFiles: '**.html'
+    - source: blox/helpers
+      target: layouts/partials/blox/community/helpers/
+      includeFiles: '**.html'
