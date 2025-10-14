@@ -55,9 +55,18 @@ There are three main loops in this page, each nested inside the other: Years, We
     {{ break }}
 {{ end }}
 
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
 
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $title }}
+  </div>
 
-<div class="row mt-3">
+  {{ with $text }}
+    <p class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">{{ . }}</p>
+  {{ end }}
+</div>
+
+<!-- <div class="row mt-3">
     <div id="decade-0">
         <div class="col-12 d-flex justify-content-between">
     {{- /* Start years loop  */ -}}
@@ -216,4 +225,4 @@ There are three main loops in this page, each nested inside the other: Years, We
         {{ end }}
     {{- end -}}
     </div>
-</div>
+</div> -->
